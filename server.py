@@ -13,3 +13,4 @@ while True:
         break
     print(data.decode())
 my_socket.close()
+print('test')
