@@ -46,12 +46,8 @@ while True:
 
     print(json.dumps(js, indent=4))
 
-    lat = js['results'][0]['geometry']['location']['lat']
-    lng = js['results'][0]['geometry']['location']['lng']
-    print('lat', lat, 'lng', lng)
-    location = js['results'][0]['formatted_address']
 
     try:
-        print(js['results'][0]['address_components'][3]['short_name'])
+        print(js['results'][0]['place_id'])
     except IndexError:
         print('not a country territory')
