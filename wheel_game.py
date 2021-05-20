@@ -9,7 +9,7 @@ SORTED_FREQUENCIES = 'ZQXJKVBPYGFWMUCLDRHSNIOATE'
 
 
 # Write the WOFPlayer class definition (part A) here
-class WOFPlayer():
+class WOFPlayer:
     def __init__(self, name):
         self.name = name
         self.prizeMoney = 0
@@ -256,7 +256,6 @@ while True:
     if wheelPrize['type'] == 'bankrupt':
         player.goBankrupt()
         continue
-        player.getMove(category, obscurePhrase(phrase, guessed), guessed)
     elif wheelPrize['type'] == 'loseturn':
         pass  # do nothing; just move on to the next player
     elif wheelPrize['type'] == 'cash':
