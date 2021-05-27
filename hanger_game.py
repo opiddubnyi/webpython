@@ -27,7 +27,7 @@ def obscure_word(word, guessed):
     return reveal
 
 
-def game_round(player=player):
+def game_round():
     is_end = False
     guessed = []
     word = pick_word(int(input('Enter word length: ')))
@@ -71,4 +71,4 @@ def game_round(player=player):
 print("You have 7 tries to guess the word, otherwise you'll die!\n"
       "Good luck!")
 
-game_round(player)
+game_round()
