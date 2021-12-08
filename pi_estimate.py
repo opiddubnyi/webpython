@@ -7,6 +7,7 @@ for i in range(1, tries):
     x = random.uniform(0, 1)
     y = random.uniform(0, 1)
     g = random.uniform(0, 1)
+    ss = 's'
 
     c = x ** 2 + y ** 2
 
